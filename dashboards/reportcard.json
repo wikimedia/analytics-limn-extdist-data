@@ -6,7 +6,7 @@
         {
             "name": "Main",
             "graph_ids": [
-                "http://datasets.wikimedia.org/limn-public-data/extdist/datafiles/downloads.csv",
+                "http://datasets.wikimedia.org/limn-public-data/extdist/datafiles/downloads.csv"
             ]
         }
     ]
