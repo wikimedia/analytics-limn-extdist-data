@@ -1,0 +1,13 @@
+{
+    "id": "reportcard",
+    "headline": "Extension Distributor",
+    "subhead": "",
+    "tabs": [
+        {
+            "name": "Main",
+            "graph_ids": [
+                "http://datasets.wikimedia.org/limn-public-data/extdist/datafiles/downloads.csv",
+            ]
+        }
+    ]
+}

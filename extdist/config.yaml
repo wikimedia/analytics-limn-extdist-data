@@ -1,0 +1,22 @@
+databases:
+    el:
+        host: "analytics-store.eqiad.wmnet"
+        port: 3306
+        creds_file: /a/.my.cnf.research
+        db: log
+# for convenience, define unions of different event logging schemas here:
+tables:
+intervals:
+        running_average: 30
+output:
+    path: /a/limn-public-data/extdist/datafiles
+defaults:
+    db: el
+
+# the key in the graph section is the name of the sql file and generated file
+graphs:
+    downloads:
+        title: "Downloads by Action"
+        frequency: daily
+        timeboxed: true
+        starts: 2015-07-01
