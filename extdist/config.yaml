@@ -27,3 +27,7 @@ graphs:
         frequency: daily
         timeboxed: true
         starts: 2015-07-01
+
+    downloads:
+        title: "This can not be shown in a graph"
+        frequency: daily
