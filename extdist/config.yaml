@@ -15,8 +15,15 @@ defaults:
 
 # the key in the graph section is the name of the sql file and generated file
 graphs:
-    downloads:
-        title: "Downloads by Action"
+
+    extension_downloads:
+        title: "Extensions (Top 10)"
+        frequency: daily
+        timeboxed: true
+        starts: 2015-07-01
+
+    skin_downloads:
+        title: "Skins (Top 10)"
         frequency: daily
         timeboxed: true
         starts: 2015-07-01
