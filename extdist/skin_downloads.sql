@@ -1,4 +1,5 @@
 SELECT
+    date('{from_timestamp}')            as 'Month',
     sum(if(event_name='Vector',1,0))    as 'Vector',
     sum(if(event_name='apex',1,0))      as 'apex',
     sum(if(event_name='BlueSky',1,0))   as 'BlueSky',

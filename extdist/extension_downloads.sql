@@ -1,4 +1,5 @@
 SELECT
+    date('{from_timestamp}')                            as 'Month',
     sum(if(event_name='VisualEditor',1,0))              as 'VisualEditor',
     sum(if(event_name='LdapAuthentication',1,0))        as 'LdapAuthentication',
     sum(if(event_name='WikiEditor',1,0))                as 'WikiEditor',

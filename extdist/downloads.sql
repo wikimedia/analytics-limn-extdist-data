@@ -1,5 +1,5 @@
 SELECT
-    LEFT(timestamp, 6) AS month,
+    date('{from_timestamp}') AS month,
     event_type,
     event_name,
     event_version,
@@ -7,6 +7,10 @@ SELECT
 
 FROM
     ExtDistDownloads_12369387
+
+WHERE
+    timestamp >= '{from_timestamp}' AND
+    timestamp < '{to_timestamp}'
 
 GROUP BY
     month,
@@ -18,4 +22,5 @@ ORDER BY
     month ASC,
     event_type ASC,
     event_name,
-    event_version;
+    event_version
+;

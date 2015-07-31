@@ -4,30 +4,28 @@ databases:
         port: 3306
         creds_file: /a/.my.cnf.research
         db: log
-# for convenience, define unions of different event logging schemas here:
-tables:
-intervals:
-        running_average: 30
-output:
-    path: /a/limn-public-data/extdist/datafiles
 defaults:
     db: el
+graphs: # removing this empty section makes generate.py crash
 
-# the key in the graph section is the name of the sql file and generated file
-graphs:
+reportupdater-output: /a/limn-public-data/extdist/datafiles
 
+reportupdater-reports:
     extension_downloads:
-        title: "Extensions (Top 10)"
-        frequency: daily
+        frequency: days
+        granularity: months
         timeboxed: true
         starts: 2015-07-01
 
     skin_downloads:
-        title: "Skins (Top 10)"
-        frequency: daily
+        frequency: days
+        granularity: months
         timeboxed: true
         starts: 2015-07-01
 
     downloads:
-        title: "This can not be shown in a graph"
-        frequency: daily
+        frequency: days
+        granularity: months
+        timeboxed: true
+        starts: 2015-07-01
+        funnel: true # enables multiple lines for the same date
