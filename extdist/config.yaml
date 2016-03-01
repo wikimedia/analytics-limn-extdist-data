@@ -4,13 +4,12 @@ databases:
         port: 3306
         creds_file: /a/.my.cnf.research
         db: log
+
 defaults:
     db: el
-graphs: # removing this empty section makes generate.py crash
 
-reportupdater-output: /a/limn-public-data/extdist/datafiles
+reports:
 
-reportupdater-reports:
     extension_downloads:
         frequency: days
         granularity: months
